@@ -1,0 +1,60 @@
+Line,Qty per board,Part to buy,Package,What it is,References,Notes
+1,2,MCP23017-E/SO,SOIC-28 wide,16-bit I/O expander,"U3, U19",
+2,1,TPS3823-33DBVR,SOT-23-5,Watchdog / reset chip,U5,
+3,1,MAX3232ESE+,SOIC-16,RS-232 transceiver,U6,
+4,1,ESP32-S3-WROOM-1-N8 (or -N16R8),Module,Microcontroller module with Wi-Fi,U7,
+5,3,ADS1115IDGSR,MSOP-10 (VSSOP),16-bit 4-channel ADC,"U9, U13, U17",
+6,1,MB85RC256VPNF,SOIC-8,256kbit FRAM memory,U10,
+7,1,AMS1117-3.3,SOT-223,3.3V regulator,U11,
+8,1,DS3231MZ+,SOIC-8,Real-time clock,U12,
+9,1,SN74HCT245DWR,SOIC-20 wide,8-bit level shifter for LCD,U14,
+10,1,NAU7802KGI,SOIC-16,Load-cell ADC,U15,
+11,1,USBLC6-2SC6,SOT-23-6,USB ESD protection,U16,
+12,1,SN74LVC1G08DBVR,SOT-23-5,Single AND gate,U18,
+13,2,AO3400A,SOT-23,N-channel MOSFET,"Q1, Q2",
+14,2,SS14,SMA,1A Schottky diode,"D1, D45",
+15,2,BAT54WS,SOD-323,Small Schottky diode,"D2, D4",
+16,1,1N4148W,SOD-123,Small signal diode,D6,
+17,1,SMAJ6.0A,SMA,"TVS diode, 5V rail",D23,
+18,14,PESD5V0S1BA,SOD-323,ESD protection diode,"D24, D25, D26, D27, D28, D29, D37, D38, D39, D40, D41, D42, D43, D44",
+19,5,SMF12A,SOD-123F,"TVS diode, sensor input","D32, D33, D34, D35, D36",
+20,1,WS2812B,5050,RGB status LED,D46,
+21,10,10k 1% 0805,0805,Resistor,"R1, R2, R6, R9, R10, R12, R15, R16, R17, R82",
+22,2,5.1k 1% 0805,0805,Resistor,"R3, R4",
+23,3,1k 1% 0805,0805,Resistor,"R5, R11, R13",
+24,2,100R 1% 0805,0805,Resistor,"R7, R19",
+25,3,100k 1% 0805,0805,Resistor,"R8, R20, R53",
+26,1,47k 1% 0805,0805,Resistor,R14,
+27,1,10R 1% 0805,0805,Resistor,R18,
+28,7,15k 1% 0805,0805,Resistor,"R54, R61, R65, R69, R73, R77, R80",
+29,7,27k 1% 0805,0805,Resistor,"R55, R62, R66, R70, R74, R78, R81",
+30,5,150R 1% 0805,0805,Resistor,"R60, R64, R68, R72, R76",
+31,5,9.1k 1% 0805,0805,Resistor,"R63, R67, R71, R75, R79",
+32,1,330R 1% 0805,0805,Resistor,R83,
+33,2,4.7k 1% 0805,0805,Resistor,"R84, R85",
+34,1,Bourns 3296W-1-103LF,3296W trimmer,10k trimmer (LCD contrast),RV1,
+35,1,1uF 16V X7R 0805,0805,Capacitor,C1,
+36,33,100nF X7R 0805,0805,Capacitor,"C3, C4, C8, C9, C10, C14, C15, C16, C19, C20, C22, C23, C26, C27, C28, C29, C33, C36, C37, C38, C42, C43, C44, C45, C46, C47, C48, C49, C50, C51, C52, C53, C54",
+37,1,10uF 16V electrolytic,"Radial 5mm, 2mm pitch",Capacitor,C18,
+38,1,22uF 16V electrolytic,"Radial 5mm, 2mm pitch",Capacitor,C21,
+39,4,10uF 16V X5R 0805,0805,Capacitor,"C24, C25, C34, C35",
+40,1,330pF X7R 0805,0805,Capacitor,C39,
+41,2,Littelfuse 1206L010 (100mA hold),1206,Resettable fuse,"F6, F7",
+42,1,HRO TYPE-C-31-M-12,USB-C,USB-C socket,J2,
+43,1,"1x26 pin header, 2.54mm",2.54mm pin header,Pin header,J3,Labels: Front IO; Not connected to anything - decide whether to keep
+44,7,"1x3 pin header, 2.54mm",2.54mm pin header,Pin header,"J4, J5, JP1, JP4, JP7, JP10, JP13","Labels: PRINTER_TTL, PRN_SEL, PWR 1-2=5V 2-3=12V; Fit a jumper shunt"
+45,1,"1x14 pin header, 2.54mm",2.54mm pin header,Pin header,J6,Labels: LCD
+46,1,"2x5 (10-way) box header, 2.54mm",2.54mm box header,Ribbon header,J7,Labels: PRINTER_RS232
+47,12,"1x2 pin header, 2.54mm",2.54mm pin header,Pin header,"J8, J10, JP2, JP3, JP5, JP6, JP8, JP9, JP11, JP12, JP14, JP15","Labels: 0-10V, 4-20mA, LCD_BL, WDT_EN; Shunt only if the sensor needs it"
+48,3,"1x4 pin header, 2.54mm",2.54mm pin header,Pin header,"J9, J11, J14","Labels: AMBIENT, Conn_01x04, I2C_EXP"
+49,1,"Phoenix MKDS 1,5/2-5,08 (1715721) or any 5.08mm 2-way",5.08mm screw terminal,Screw terminal,J12,Labels: TANK_TEMP
+50,2,CUI SJ1-3533NG,3.5mm jack,3.5mm jack for current clamp,"J13, J15","Labels: CT_COMP, CT_PUMP"
+51,1,"2x13 (26-way) box header, 2.54mm",2.54mm box header,Ribbon header,J30,Labels: Interconnect 2x13 IDC
+52,1,"Phoenix MKDS 1,5/5-5,08 (1715750) or any 5.08mm 5-way",5.08mm screw terminal,Screw terminal,J31,Labels: LOAD_CELL (E+ E- S+ S- SHLD)
+53,6,"Phoenix MKDS 1,5/3-5,08 (1715734) or any 5.08mm 3-way",5.08mm screw terminal,Screw terminal,"J34, J37, J38, J39, J40, J41","Labels: LEAK_SENSOR (+5V GND SIG), PRESS1 HP (PWR GND SIG), PRESS2 LP (PWR GND SIG), PRESS3 MAN1 (PWR GND SIG), PRESS4 MAN2 (PWR GND SIG), PRESS5 SPARE (PWR GND SIG)"
+54,1,"1x8 pin header, 2.54mm",2.54mm pin header,Pin header,J42,Labels: KEYPAD 8-pin (membrane tail)
+55,1,"1x16 pin header, 2.54mm",2.54mm pin header,Pin header,J43,Labels: IO_EXP2 (3V3 GND GPA2-7 GPB0-7)
+56,2,6x6mm tactile switch,6mm tactile,Push button,"SW1, SW2",
+57,1,"5V magnetic buzzer, 12mm","12mm buzzer, 7.6mm pitch",Buzzer,BZ1,
+58,1,Keystone 1058,CR2032 holder,CR2032 holder,BT1,
+Total,,Total parts placed per board / parts to buy,,,,

@@ -1,0 +1,39 @@
+(footprint "KF7.62_2P"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Generic KF7.62 screw terminal block (KF7.62-2P), 7.62mm pitch, 300V 15A. Wire entry towards -Y.")
+	(tags "KF7.62 terminal block 7.62mm mains")
+	(property "Reference" "REF**"
+		(at 3.810 -6.500 0)
+		(layer "F.SilkS")
+		(uuid "5f943ce9-2935-42e1-b59b-1b63751d7e73")
+		(effects (font (size 1 1) (thickness 0.15)))
+	)
+	(property "Value" "KF7.62_2P"
+		(at 3.810 6.500 0)
+		(layer "F.Fab")
+		(uuid "6199243e-fb68-4e0e-ac5a-0bb8a1f5832f")
+		(effects (font (size 1 1) (thickness 0.15)))
+	)
+	(attr through_hole)
+	(fp_rect (start -3.810 -5.000) (end 11.430 5.000) (stroke (width 0.1) (type solid)) (fill no) (layer "F.Fab") (uuid "1519bd13-e6de-4236-8562-8382b1ff0be0"))
+	(fp_rect (start -3.930 -5.120) (end 11.550 5.120) (stroke (width 0.12) (type solid)) (fill no) (layer "F.SilkS") (uuid "2f0b545a-98d5-44a8-a461-57414d760c47"))
+	(fp_rect (start -4.310 -5.500) (end 11.930 5.500) (stroke (width 0.05) (type solid)) (fill no) (layer "F.CrtYd") (uuid "11c9e6f3-d767-4ac7-8db7-d9f40faf265b"))
+	(fp_line (start -3.930 -3.500) (end 11.550 -3.500) (stroke (width 0.12) (type solid)) (layer "F.SilkS") (uuid "2a7411c6-3198-4329-9bb5-9a6b1eb8e69f"))
+	(pad "1" thru_hole rect (at 0.000 0.000) (size 2.8 2.8) (drill 1.6) (layers "*.Cu" "*.Mask") (remove_unused_layers no) (uuid "a458fc0b-753b-44c4-a1b7-9e5146121f31"))
+	(pad "2" thru_hole circle (at 7.620 0.000) (size 2.8 2.8) (drill 1.6) (layers "*.Cu" "*.Mask") (remove_unused_layers no) (uuid "31b6a492-de4a-4707-87a6-3599d2274518"))
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/QTech.3dshapes/KF7.62_2P.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

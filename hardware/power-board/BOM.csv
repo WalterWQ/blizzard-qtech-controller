@@ -1,0 +1,51 @@
+Line,Qty per board,Part to buy,Package,What it is,References,Notes
+1,2,ULN2803A,DIP-18 (socket),8-way relay driver,"U1, U2",Fit in an 18-pin DIP socket
+2,1,LM2937ET-12,TO-220,12V linear regulator,U4,Needs a small TO-220 heatsink
+3,1,LM2596S-5.0,TO-263-5,5V buck regulator,U8,
+4,1,AO3401A,SOT-23,P-channel MOSFET,Q3,
+5,1,AO3400A,SOT-23,N-channel MOSFET,Q4,
+6,11,Omron G2RL-1-E DC12,G2RL 5-pin (SPDT),"12A changeover relay, 12V coil","K1, K2, K3, K4, K5, K6, K7, K8, K11, K13, K14","K1-K8, K13, K14 valves; K11 condenser fan"
+7,3,Omron G2RL-1A-E DC12,G2RL 4-pin (SPST-NO),"16A relay, 12V coil","K9, K10, K12","K9 compressor, K10 vacuum pump, K12 master"
+8,1,Omron G2RL-1-E DC12,G2RL 5-pin (SPDT),"12A changeover relay, 12V coil",K15,Optional: only fit if the machine has a tank heater
+9,2,KBP206G,"KBP (in-line, 4-pin)",2A 600V bridge rectifier,"D3, D5",
+10,1,SS54,SMC,5A Schottky diode,D7,
+11,13,0805 LED (any colour),0805 LED,Indicator LED,"D8, D9, D10, D11, D12, D13, D14, D15, D16, D17, D18, D30, D31",
+12,1,SS14,SMA,1A Schottky diode,D19,
+13,1,"0805 LED, green",0805 LED,Indicator LED,D20,
+14,1,SMBJ15A,SMB,"TVS diode, 12V rail",D21,
+15,1,SMAJ6.0A,SMA,"TVS diode, 5V rail",D22,
+16,1,0805 LED (any colour),0805 LED,Indicator LED,D32,Optional: only fit if the machine has a tank heater
+17,14,4.7k 1% 0805,0805,Resistor,"R21, R22, R23, R24, R25, R26, R27, R28, R29, R30, R31, R48, R56, R57",
+18,1,"1M 1/2W 1% Axial, 15.24mm pitch","Axial, 15.24mm pitch",Resistor,R32,
+19,14,47k 1% 0805,0805,Resistor,"R33, R34, R35, R36, R37, R38, R39, R40, R41, R42, R43, R58, R59, R60",
+20,4,10k 1% 0805,0805,Resistor,"R44, R45, R49, R51",
+21,1,1k 1% 0805,0805,Resistor,R46,
+22,1,100k 1% 0805,0805,Resistor,R47,
+23,2,3.3k 1% 0805,0805,Resistor,"R50, R52",
+24,1,4.7k 1% 0805,0805,Resistor,R61,Optional: only fit if the machine has a tank heater
+25,10,TDK/EPCOS S10K275,12mm disc,Mains varistor (valve outputs),"RV2, RV3, RV4, RV5, RV6, RV7, RV8, RV9, RV13, RV14",
+26,3,TDK/EPCOS S14K275,15.5mm disc,Mains varistor (motor outputs),"RV10, RV11, RV12",
+27,1,TDK/EPCOS S10K275,12mm disc,Mains varistor (valve outputs),RV15,Optional: only fit if the machine has a tank heater
+28,1,100nF X2 275VAC,"Box, 10mm pitch (13 x 6mm)",Mains safety capacitor,C2,
+29,1,22uF 25V electrolytic,"Radial 5mm, 2mm pitch",Capacitor,C5,
+30,1,2200uF 35V electrolytic,"Radial 16mm, 7.5mm pitch",Capacitor,C6,
+31,5,100nF X7R 0805,0805,Capacitor,"C7, C11, C13, C40, C41",
+32,1,1000uF 35V electrolytic,"Radial 12.5mm, 5mm pitch",Capacitor,C12,
+33,1,220uF 16V electrolytic,"Radial 8mm, 3.5mm pitch",Capacitor,C17,
+34,2,2.2nF Y2 300VAC,"Disc, 10mm pitch",Mains safety capacitor,"C30, C31",
+35,1,4.7nF Y2 300VAC,"Disc, 10mm pitch",Mains safety capacitor,C32,
+36,1,Bourns SRR1260-470M (or equiv.),12x12mm SMD,Buck regulator inductor,L1,
+37,1,Schurter FAB 0031-355x (5x20mm) + fuse T125mA,5x20mm fuse holder,Fuse holder,F1,
+38,2,Bourns MF-MSMF110 (1.1A hold),1812,Resettable fuse,"F2, F3",
+39,1,Schurter FAB 0031-355x (5x20mm) + fuse T2A,5x20mm fuse holder,Fuse holder,F4,
+40,1,Schurter FAB 0031-355x (5x20mm) + fuse T6.3A,5x20mm fuse holder,Fuse holder,F5,
+41,1,Schurter FAB 0031-355x (5x20mm) + fuse T2A,5x20mm fuse holder,Fuse holder,F8,Optional: only fit if the machine has a tank heater
+42,1,"KF7.62-3P (7.62mm pitch, 3-way)",7.62mm screw terminal,Mains screw terminal,J1,"Mains in: E, N, L"
+43,10,"KF7.62-2P (7.62mm pitch, 2-way)",7.62mm screw terminal,Mains screw terminal,"J16, J17, J18, J19, J20, J21, J22, J23, J35, J36",Valve coils VALVE1-10
+44,3,"KF7.62-3P (7.62mm pitch, 3-way)",7.62mm screw terminal,Mains screw terminal,"J24, J25, J26","Compressor, vacuum pump, condenser fan. Pin order E, N, L"
+45,1,"2x13 (26-way) box header, 2.54mm",2.54mm box header,Ribbon header,J30,Labels: Interconnect 2x13 IDC
+46,1,"KF7.62-3P (7.62mm pitch, 3-way)",7.62mm screw terminal,Mains screw terminal,J44,"Optional: tank heater. Pin order E, N, L"
+47,1,Hahn BV UI 395 0091,PCB transformer,Mains PCB transformer,TR1,Reuse the one from the old board. Check pin spacing before ordering the PCB
+48,1,Schaffner RN212-1.2-02,Schaffner RN212 (12.5 x 18mm),Mains EMI filter choke,FL1,
+49,2,"KF2EDG 5.08mm 2-way (or Phoenix MKDS 1,5/2-5,08)",5.08mm screw terminal,Low-voltage screw terminal,"J32, J33",E-stop (NC) and HP switch (NC). Wire a link across if not used
+Total,,Total parts placed per board / parts to buy,,,,

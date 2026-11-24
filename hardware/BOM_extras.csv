@@ -1,0 +1,15 @@
+Line,Qty per set,Item,Used for,Notes
+1,20,2.54mm jumper shunts,Jumpers,"Controller: JP1/4/7/10/13 sensor power (5), J5 printer select (1), J10 watchdog enable (1). Up to 10 more for 4-20mA / 0-10V sensors."
+2,1,26-way IDC ribbon cable (length to suit),Board-to-board cable,"Controller J30 to power board J30, pin 1 to pin 1."
+3,2,26-way IDC female socket (with strain relief),Board-to-board cable,One each end of the ribbon.
+4,1,10-way IDC female socket,Printer cable,Only if the printer uses the RS-232 header J7.
+5,1,CR2032 coin cell,Clock backup,For BT1.
+6,2,18-pin DIP IC socket,Power board,"For U1, U2 (ULN2803A)."
+7,1,Small TO-220 heatsink + M3 screw,Power board,For U4 (LM2937).
+8,1,5x20mm fuse T125mA,Power board,F1 (transformer).
+9,1,5x20mm fuse T2A,Power board,F4 (valves). Add 1 more for F8 if the heater is fitted.
+10,1,5x20mm fuse T6.3A,Power board,F5 (motors).
+11,3,TE Mate-N-Lok 3-way plug housing + pins,Motor cables,"Mates with J24, J25, J26."
+12,1,"M3 screw, star washer and ring terminal",Power board earth,Bonds the PE mounting hole (H1) to the machine earth strap.
+13,4,M3 nylon standoffs + screws,Controller mounting,Keep metal away from the antenna end of the ESP32.
+14,1,Ribbon / cable for the LCD,Front panel,Depends on the machine's display. Confirm first.

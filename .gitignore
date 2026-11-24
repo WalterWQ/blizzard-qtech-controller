@@ -1,0 +1,10 @@
+# KiCad
+*-backups/
+*.kicad_prl
+*.lck
+fp-info-cache
+_autosave-*
+*.bak
+# Build
+build/
+.DS_Store
